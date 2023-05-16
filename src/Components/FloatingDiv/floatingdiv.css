@@ -1,0 +1,44 @@
+.FloatingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    border: 7px solid var(--orangeCard);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: var(--boxShadow);
+    padding: 10px;
+}
+
+.FloatingDiv>span:nth-child(3) {
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--gray);
+    line-break: auto;
+}
+
+.FloatingDiv>img {
+    margin-bottom: -1rem;
+    width: 4rem;
+}
+
+
+.FloatingDiv>span:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.f-button {
+    text-transform: uppercase;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, .08);
+    background: white;
+    color: #5290fd;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}

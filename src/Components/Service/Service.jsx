@@ -1,0 +1,50 @@
+import './service.css'
+import humble from '../../img/humble.png'
+import glasses from '../../img/glasses.png'
+import heartemoji from '../../img/heartemoji.png'
+import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import Resume from '../../img/amazon.png'
+function Service() {
+    return (
+        <div className='service'>
+            <div className='s-left'>
+                <span>my awesome</span>
+                <span>service</span>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil dicta repellat quidem! Esse, aliquam tenetur.
+                </span>
+
+                <a href={Resume} download>
+                    <button className='button s-button'>
+                        Download Csv
+                    </button>
+                </a>
+
+                <div className="blur s-blur"></div>
+            </div>
+
+            <div className='s-right'>
+                <div className='f-1'>
+                    <FloatingDiv image={heartemoji} title="Design"
+                        txt="Adobe Xd,Figma,Adobe Photoshop,Adobe Encoder" />
+                </div>
+
+                <div className='f-2'>
+                    <FloatingDiv image={glasses} title="Devloper"
+                        txt="Html,Css3,Javascript,React " />
+                </div>
+
+                <div className='f-3'>
+                    <FloatingDiv image={humble} title="UI/UX"
+                        txt="Adobe Xd,Figma,Adobe Photoshop,Adobe Encoder" />
+                </div>
+            </div>
+
+            {/* Blur Dives */}
+            <div className='blur s-blur2'></div>
+        </div>
+    )
+}
+
+export default Service
