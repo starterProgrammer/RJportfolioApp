@@ -19,7 +19,7 @@ function Nav() {
                 </div>
 
                 <button className="button n-button">
-                    Contact Us
+                    Contact
                 </button>
             </div>
         </div>
