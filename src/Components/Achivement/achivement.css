@@ -1,0 +1,42 @@
+.achivement {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.circle::before {
+    content: '';
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+}
+
+
+.achivement>span:nth-of-type(1) {
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.achivement>span:nth-of-type(2) {
+    color: var(--orange);
+}

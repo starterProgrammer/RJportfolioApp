@@ -1,0 +1,8 @@
+.experience {
+    display: flex;
+    gap: 5rem;
+    margin-top: 20rem;
+    justify-content: space-between;
+    height: 30vh;
+    margin-bottom: 8rem;
+}

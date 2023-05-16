@@ -32,7 +32,7 @@ function Service() {
 
                 <div className='f-2'>
                     <FloatingDiv image={glasses} title="Devloper"
-                        txt="Html,Css3,Javascript,React " />
+                        txt="Html,Css3,Javascript,React,React Native" />
                 </div>
 
                 <div className='f-3'>
