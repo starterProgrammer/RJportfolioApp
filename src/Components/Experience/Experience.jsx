@@ -6,7 +6,7 @@ function Experience() {
         <div className='experience'>
 
             <Achivement
-                year={+8}
+                year={'8+'}
                 title={'year'}
                 txt={"Eperience"}
             />
