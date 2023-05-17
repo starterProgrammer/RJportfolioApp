@@ -1,0 +1,72 @@
+.contact {
+    display: flex;
+    height: 80vh;
+    padding: 0 3rem 0 3rem;
+    margin-top: 4rem;
+}
+
+.c-left {
+    flex: 1;
+    text-transform: capitalize;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.c-left>span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.c-left>span:nth-child(1) {
+    color: var(--black);
+}
+
+.c-left>span:nth-child(2) {
+    color: var(--orange);
+}
+
+.c-bulr {
+    background: #abf1ff94;
+    left: -45% !important;
+    bottom: 0 !important;
+    top: 58% !important;
+}
+
+/* Right Side */
+
+.c-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.c-right>form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 4rem !important;
+}
+
+.cf-blur {
+    background: var(--purple);
+    top: 5rem !important;
+    left: 3rem !important;
+}

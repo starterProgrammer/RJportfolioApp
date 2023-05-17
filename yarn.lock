@@ -1133,6 +1133,11 @@
   dependencies:
     postcss-value-parser "^4.2.0"
 
+"@emailjs/browser@^3.11.0":
+  version "3.11.0"
+  resolved "https://registry.npmjs.org/@emailjs/browser/-/browser-3.11.0.tgz"
+  integrity sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA==
+
 "@eslint/eslintrc@^1.2.1":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz"
