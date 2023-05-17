@@ -19,7 +19,7 @@ function Work() {
     const darkMood = theme.state.darkMood;
 
     return (
-        <div className='work'>
+        <div className='work' id="work">
             <div className='w-left'>
                 <span style={{ color: darkMood ? 'white' : '' }}>works for all these</span>
                 <span>brand & clients</span>

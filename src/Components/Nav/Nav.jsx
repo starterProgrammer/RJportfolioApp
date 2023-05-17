@@ -1,9 +1,11 @@
+import Link from 'react-scroll/modules/components/Link'
 import Toggle from '../Toggle/Toggle'
 import './nav.css'
 
+
 function Nav() {
     return (
-        <div className='n-wrapper'>
+        <div className='n-wrapper' id="Navbar">
             <div className="n-left">
                 <div className="n-name">Andrew</div>
                 <Toggle />
@@ -11,17 +13,16 @@ function Nav() {
             <div className="n-right">
                 <div className="n-list">
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Experience</li>
-                        <li>Portfolio</li>
-                        <li>Testimonials</li>
+                        <Link activeClass="active" to="Navbar" spy={true} smooth={true} ><li>Home</li></Link>
+                        <Link to="services" spy={true} smooth={true} > <li>Services</li></Link>
+                        <Link to="works" spy={true} smooth={true} > <li>Experience</li></Link>
+                        <Link to="portfolio" spy={true} smooth={true} ><li>Portfolio</li></Link>
+                        <Link to="testimonial" spy={true} smooth={true} ><li>Testimonials</li></Link>
                     </ul>
                 </div>
-
-                <button className="button n-button">
-                    Contact
-                </button>
+                <Link to="contact" spy={true} smooth={true}>
+                    <button className="button n-button">Contact</button>
+                </Link>
             </div>
         </div>
     )

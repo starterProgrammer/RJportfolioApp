@@ -23,7 +23,7 @@ function Service() {
 
 
     return (
-        <div className='service'>
+        <div className='service' id='services'>
             <div className='s-left'>
                 <span style={{ color: darkMood ? 'white' : '' }}>my awesome</span>
                 <span>service</span>
