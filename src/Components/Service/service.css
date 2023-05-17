@@ -1,9 +1,9 @@
 .service {
     display: flex;
     height: 90vh;
-    margin-bottom: 13rem;
+    margin-bottom: 3rem;
     padding: 0 3rem 0 3rem;
-    margin-top: 9rem;
+    margin-top: 1rem;
     position: relative;
 }
 

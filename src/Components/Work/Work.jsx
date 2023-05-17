@@ -9,6 +9,10 @@ import upwork from '../../img/upwork.png'
 import { useContext } from "react";
 import { themeContext } from '../../Context'
 
+// Animation 
+import { motion } from "framer-motion";
+
+
 function Work() {
     // Dark Mood
     const theme = useContext(themeContext)
@@ -17,7 +21,7 @@ function Work() {
     return (
         <div className='work'>
             <div className='w-left'>
-                <span  style={{ color: darkMood ? 'white' : '' }}>works for all these</span>
+                <span style={{ color: darkMood ? 'white' : '' }}>works for all these</span>
                 <span>brand & clients</span>
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -34,7 +38,12 @@ function Work() {
 
             <div className='w-right'>
 
-                <div className='w-mainCircle'>
+                <motion.div
+                    initial={{ rotate: 90 }}
+                    whileInView={{ rotate: -1 }}
+                    viewport={{ margin: "-40px" }}
+                    transition={{ duration: 3, type: "spring" }}
+                    className='w-mainCircle'>
                     <div className='w-secCircle'>
                         <img src={upwork} alt="" />
                     </div>
@@ -50,7 +59,7 @@ function Work() {
                     <div className='w-secCircle'>
                         <img src={facebook} alt="" />
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Backgrounds */}
                 <div className='w-backCircle blueCircle'></div>

@@ -41,7 +41,7 @@ function Contact() {
                     <input type="email" name='user_email' className='user' placeholder='Email' />
                     <textarea type="text" name='messege' className='user' placeholder='Messege' />
                     <input type='submit' value='Send' className='button' />
-                    {done && <span>Thanks For Contact Me!</span>}
+                    {done && <span style={{ color: '#007500' }}>Thanks For Contact Me!</span>}
                     <div className='blur cf-blur'></div>
                 </form>
             </div>

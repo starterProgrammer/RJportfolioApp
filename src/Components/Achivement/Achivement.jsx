@@ -14,7 +14,7 @@ function Achivement({ year, title, txt }) {
     return (
         <div className='achivement' style={{ color: darkMood ? 'black' : '' }}>
             <div className='circle'>{year}</div>
-            <span>{title}</span>
+            <span style={{ color: darkMood ? 'white' : '' }}>{title}</span>
             <span>{txt}</span>
         </div>
     )

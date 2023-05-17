@@ -13,12 +13,15 @@ import Floating from '../Floating/Floating'
 // Dark Mood
 import { useContext } from "react";
 import { themeContext } from '../../Context'
+import { motion } from "framer-motion"
 
 function Intro() {
     // Dark Mood
     const theme = useContext(themeContext)
     const darkMood = theme.state.darkMood;
 
+    // Animation 
+    const transition = { duration: 2, type: 'spring' }
 
     return (
         <div className='intro'>
@@ -46,20 +49,32 @@ function Intro() {
                 <img src={vector1} alt="" />
                 <img src={vector2} alt="" />
                 <img src={boy} alt="" />
-                <img src={glassesimoji} alt="" />
-                <div className='float-1'>
+                <motion.img
+                    initial={{ left: '-36%' }}
+                    whileInView={{ left: '-24%' }}
+                    transition={transition}
+                    src={glassesimoji} alt="" />
+                <motion.div
+                    initial={{ top: '-4%', left: '74%' }}
+                    whileInView={{ left: '68%' }}
+                    transition={transition}
+                    className='float-1'>
                     <Floating image={crown} txt1="web" txt2="developer" />
-                </div>
+                </motion.div>
 
-                <div className='float-2'>
+                <motion.div
+                    initial={{ left: '-12rem' }}
+                    whileInView={{ left: '-.7rem' }}
+                    transition={{ ...transition, duration: 4 }}
+                    className='float-2'>
                     <Floating image={thumbup} txt1="best design" txt2="award" />
-                </div>
+                </motion.div>
 
                 {/* Blur dive */}
                 <div className='blur blur-left'></div>
                 <div className='blur blur-center'></div>
             </div>
-        </div>
+        </div >
     )
 }
 
