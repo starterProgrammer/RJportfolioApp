@@ -1,3 +1,4 @@
+import Toggle from '../Toggle/Toggle'
 import './nav.css'
 
 function Nav() {
@@ -5,7 +6,7 @@ function Nav() {
         <div className='n-wrapper'>
             <div className="n-left">
                 <div className="n-name">Andrew</div>
-                <span>Toggle</span>
+                <Toggle />
             </div>
             <div className="n-right">
                 <div className="n-list">
