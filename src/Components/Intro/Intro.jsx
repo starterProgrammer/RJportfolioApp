@@ -10,12 +10,21 @@ import glassesimoji from '../../img/glassesimoji.png'
 import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
 import Floating from '../Floating/Floating'
+// Dark Mood
+import { useContext } from "react";
+import { themeContext } from '../../Context'
+
 function Intro() {
+    // Dark Mood
+    const theme = useContext(themeContext)
+    const darkMood = theme.state.darkMood;
+
+
     return (
         <div className='intro'>
             <div className='i-left'>
                 <div className="i-name">
-                    <span>Hy! I Am</span>
+                    <span style={{ color: darkMood ? 'white' : '' }}>Hy! I Am</span>
                     <span>Andrew Thomas</span>
                     <span>
                         Frontend Developer with higher level of experience in web designing and

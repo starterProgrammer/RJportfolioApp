@@ -4,11 +4,22 @@ import glasses from '../../img/glasses.png'
 import heartemoji from '../../img/heartemoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import Resume from '../../img/amazon.png'
+// Dark Mood
+import { useContext } from "react";
+import { themeContext } from '../../Context'
+
 function Service() {
+
+
+    // Dark Mood
+    const theme = useContext(themeContext)
+    const darkMood = theme.state.darkMood;
+
+
     return (
         <div className='service'>
             <div className='s-left'>
-                <span>my awesome</span>
+                <span style={{ color: darkMood ? 'white' : '' }}>my awesome</span>
                 <span>service</span>
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

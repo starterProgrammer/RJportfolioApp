@@ -5,11 +5,19 @@ import amazon from '../../img/amazon.png'
 import shopify from '../../img/shopify.png'
 import upwork from '../../img/upwork.png'
 
+// Dark Mood
+import { useContext } from "react";
+import { themeContext } from '../../Context'
+
 function Work() {
+    // Dark Mood
+    const theme = useContext(themeContext)
+    const darkMood = theme.state.darkMood;
+
     return (
         <div className='work'>
             <div className='w-left'>
-                <span>works for all these</span>
+                <span  style={{ color: darkMood ? 'white' : '' }}>works for all these</span>
                 <span>brand & clients</span>
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

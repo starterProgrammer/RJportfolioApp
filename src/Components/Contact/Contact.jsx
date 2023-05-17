@@ -1,8 +1,12 @@
 import './contact.css'
 import emailjs from '@emailjs/browser';
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
+import { themeContext } from '../../Context';
 
 function Contact() {
+    // Dark Mood
+    const theme = useContext(themeContext)
+    const darkMood = theme.state.darkMood;
     const form = useRef();
 
     const YOUR_SERVICE_ID = 'service_91n2ild';
@@ -27,7 +31,7 @@ function Contact() {
     return (
         <div className='contact'>
             <div className='c-left'>
-                <span>Get in Touch</span>
+                <span style={{ color: darkMood ? 'white' : '' }}>Get in Touch</span>
                 <span>Contact Me </span>
                 <div className='blur c-bulr'></div>
             </div>
