@@ -3,7 +3,7 @@ import { createContext, useReducer } from "react";
 
 export const themeContext = createContext()
 
-const initialState = { darkMood: true }
+const initialState = { darkMood: false }
 
 const themeReducer = (state, action) => {
     switch (action.type) {
